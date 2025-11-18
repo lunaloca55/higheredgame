@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Ascent - University Platformer</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Embed styles here for robustness in case style.css isn't found */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: monospace; /* Retro font fallback */
+        }
+
+        #gameCanvas {
+            border: 8px solid #333;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            /* Game Boy style colors */
+            background-color: #c7f0d8;
+            image-rendering: pixelated; /* Essential for that retro blocky look */
+            touch-action: none; /* Prevent default touch actions on canvas */
+        }
+    </style>
+</head>
+<body>
+    <!-- The main canvas where the game is drawn -->
+    <canvas id="gameCanvas" width="800" height="480"></canvas>
+
+    <!-- Load the JavaScript file -->
+    <script src="game.js"></script>
+</body>
+</html>
